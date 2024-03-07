@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>GALLERIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     
+      referrerpolicy="no-referrer"
+    />
+    <link href="./styles/main.mobile.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+   
+      <img class="logo-svg" src="./photos/logo.svg" alt="logo gallery" />
+      <div id="mySidebar" class="sidebar">
+        <a href="#" class="closebtn" onclick="closeNav()"
+          ><i class="fa-solid fa-arrow-left"></i>
+        </a>
+       
+     
+        <a href="./about-us.html">About us</a>
+        <a href="./sign-in.html">Sign in</a>
+        <a href="./sign-up.html">Sign up</a>
+        <a href="./coming-soon.html">Shop</a>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
+    </nav>
+
+    <hr />
+    <main class="homepage" >
+    <section class="magny">
+     
+        <input  class="search" type="search" name="" id="search-item1" placeholder="Search" onkeyup="search()"/> 
+       
+    </section>
+      <div class="photos" id="photos-id">
+        <div class="info-photo">
+        <a href="/index1.html" class="photo-holder">
+          <img src="./photos/starry-night.jpg" alt="starry night" />
+          <div class="text">
+            <h2>Starry Night</h2>
+            <p>Vincent Van Gogh</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index2.html" class="photo-holder">
+          <img src="./photos/pearl.jpg" alt="girl with the earing pearl" />
+          <div class="text">
+            <h2>Girl with a Pearl Earring</h2>
+            <p>Johannes Vermeer</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index3.html" class="photo-holder">
+          <img src="./photos/picasso.jpg" alt="guernica" />
+          <div class="text">
+            <h2>Guernica</h2>
+            <p>Pablo Picasso</p>
+          </div>
+        </div>
+        </a>
+        <div class="info-photo">
+        <a href="/index4.html" class="photo-holder">
+          <img src="./photos/penitent.jpg" alt="woman" />
+          <div class="text">
+            <h2>Penitent Magdalene</h2>
+            <p>Artemisia Gentileschi</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index5.html" class="photo-holder">
+          <img src="./photos/boat.jpg" alt="boat on the see" />
+          <div class="text">
+            <h2>The Storm on the Sea of Galilee</h2>
+            <p>Rembrandt</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index6.html" class="photo-holder">
+          <img src="./photos/wave.jpg" alt="waves" />
+          <div class="text">
+            <h2>The Great Wave off Kanagawa</h2>
+            <p>Hokusai</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index7.html" class="photo-holder">
+          <img src="./photos/gogh.jpg" alt="self portrait" />
+          <div class="text">
+            <h2>Van Gogh self-portrait</h2>
+            <p>Vincent van Gogh</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index8.html" class="photo-holder">
+          <img src="./photos/gypsy.jpg" alt="sleeping gypsy" />
+          <div class="text">
+            <h2>The Sleeping Gypsyh</h2>
+            <p>Henri Rousseau</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index9.html" class="photo-holder">
+          <img src="./photos/girl.jpg" alt="girl with animal" />
+          <div class="text">
+            <h2>Lady with an Ermin</h2>
+            <p>Leonardo da Vinci</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index10.html" class="photo-holder">
+          <img src="./photos/table.jpg" alt="restaurant" />
+          <div class="text">
+            <h2>The Night Café</h2>
+            <p>Vincent van Gogh</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index11.html" class="photo-holder">
+          <img src="./photos/apples.jpg" alt="tables with apples" />
+          <div class="text">
+            <h2>The Basket of Apples</h2>
+            <p>Paul Cézanne</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index12.html" class="photo-holder">
+          <img src="./photos/boy in red vest.jpg" alt="boy in the red vest" />
+          <div class="text">
+            <h2>The Boy in the Red Vest</h2>
+            <p>Edward Hopper</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index13.html" class="photo-holder">
+          <img src="./photos/green.jpg" alt="2 men" />
+          <div class="text">
+            <h2>Arnolfini Portrait</h2>
+            <p>Jan van Eyck</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index14.html" class="photo-holder">
+          <img src="./photos/mona lisa.jpg" alt="mona lisa" />
+          <div class="text">
+            <h2>Mona Lisa</h2>
+            <p>Leonardo da Vinci</p>
+          </div>
+        </a>
+      </div>
+      <div class="info-photo">
+        <a href="/index15.html" class="photo-holder">
+          <img src="./photos/the swing.jpg" alt="the swing" />
+          <div class="text">
+            <h2>The Swing</h2>
+            <p>Jean-Honoré Fragonard</p>
+          </div>
+        </a>
+      </div>
+      </div>
+    </main>
+
+    <section class="site-footer">
+      <img class="logo1" src="./photos/logo.svg" alt="logo gallery2" />
+      <p>Palazzo Venier dei Leoni</p>
+      <p>Dorsoduro 701</p>
+      <p>I-30123 Venice</p>
+      <p>tel: +39 041 2405 411</p>
+      <p>e-mail: galleria.it</p>
+      <a class="subscribe">Subscribe to our newsletter</a>
+      <div class="icons">
+        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <hr class="h2" />
+      <div class="places">
+        <p class="city">VENICE</p>
+        <a href="#"><p class="museum">Solomon R. Galleria Museum</p></a>
+        <p class="city">LONDON</p>
+        <a href="#"><p class="museum">R. Galleria Museum</p></a>
+        <p class="city">PARIS</p>
+        <a href="#"> <p class="museum">Galleria Museum</p></a>
+        <p class="city">COPENHAGA</p>
+        <a href="#"><p class="museum">Galleria Museum</p></a>
+      </div>
+      <hr class="h3" />
+
+      <div class="terms">
+        <a href="#"><p>Terms and conditions</p> </a>
+        <a href="#"> <p>Privacy policy</p></a>
+        <a href="#"> <p>Cookies Policy</p></a>
+      </div>
+      <hr class="h3" />
+      <div class="foundation">
+        <p>&copy; 2023 The Galleria Foundation</p>
+      </div>
+    </section>
+    <script src="/main.js"></script>
+  </body>
+
+</html>
