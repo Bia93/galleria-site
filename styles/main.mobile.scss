@@ -1,919 +1,5 @@
 @import "base";
-
-$outer-spacing: 20px;
-$margins: 30px;
-nav {
-  margin: auto;
-  .logo-svg {
-    position: absolute;
-    left: 24px;
-    top: 30px;
-  }
-
-  .sidebar {
-    height: 100%;
-
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    padding-top: 80px;
-    transition: 0.5s;
-
-    a {
-      padding: 12px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: white;
-      display: block;
-      transition: 0.3s;
-    }
-  }
-}
-.closebtn {
-  .fa-solid {
-    position: absolute;
-    top: 41px;
-  }
-}
-
-.openbtn {
-  font-size: 35px;
-  background-color: white;
-  color: black;
-  border: none;
-}
-
-#main {
-  transition: margin-left 0.3s;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-hr {
-  background: #e5e5e5;
-  border: none;
-  height: 1px;
-}
-.magny {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: -36px;
-
-  .search {
-    padding-left: 13px;
-    width: 90%;
-    border: 1px solid grey;
-    border-radius: 5px;
-    outline: none;
-    height: 48px;
-    position: relative;
-    max-width: 300px;
-
-    margin: 14px;
-    color: black;
-    font-size: 1em;
-  }
-  .search-button {
-    background: transparent;
-    border: none;
-    outline: none;
-    position: absolute;
-    right: 320px;
-
-    .img {
-      width: 40px;
-      height: 40px;
-      object-fit: cover;
-    }
-  }
-}
-
-.photos {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 23px;
-  max-height: 90%;
-  max-width: 400px;
-  padding: 14px 23px 30px 23px;
-
-  .photo-holder {
-    position: relative;
-    .text {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      color: #f3f3f3;
-
-      h2 {
-        font-family: "Libre Baskerville", serif;
-        font-size: 17px;
-        background: rgba(100, 100, 100, 0.2);
-        padding: 4px 3px;
-        border-radius: 5px;
-      }
-      p {
-        font-family: "Libre Baskerville", serif;
-        color: #e5e5e5;
-        font-size: 12px;
-        background: rgba(100, 100, 100, 0.3);
-        display: inline;
-      }
-    }
-
-    img {
-      max-width: 90%;
-    }
-  }
-}
-
-.site-footer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px;
-  background-color: #f3f3f3;
-  .logo1 {
-    margin: 0 auto;
-  }
-  p {
-    font-size: 14px;
-    font-family: "Libre Baskerville", serif;
-  }
-  img {
-    width: 100px;
-    line-height: 30px;
-  }
-  .subscribe {
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: underline;
-    text-decoration-color: #7d7d7d;
-    font-family: "Libre Baskerville", serif;
-    margin-bottom: 1em;
-  }
-
-  .icons {
-    font-size: 20px;
-    display: flex;
-    gap: 27px;
-    color: grey;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    margin: 0 auto;
-    a {
-      color: black;
-    }
-  }
-  .places {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    .city {
-      font-size: 14px;
-      font-weight: bold;
-      font-family: "Libre Baskerville", serif;
-    }
-    .museum {
-      font-size: 13px;
-      color: #7d7d7d;
-      font-family: "Libre Baskerville", serif;
-    }
-  }
-  .terms {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5px;
-    font-size: 12px;
-    font-family: "Libre Baskerville", serif;
-    color: #7d7d7d;
-    letter-spacing: -1px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    a {
-      color: #7d7d7d;
-    }
-  }
-  .foundation {
-    color: #7d7d7d;
-    letter-spacing: -1px;
-    font-size: 15px;
-    margin-top: 30px;
-  }
-}
-/*INDEX1*/
-
-.header-starry {
-  padding: 20px;
-}
-.top-section {
-  padding: 0 24px;
-
-  .main-part {
-    margin: 0 auto;
-    position: relative;
-    padding-top: 24px;
-    max-width: 80%;
-    .pop {
-      display: flex;
-      justify-content: center;
-      min-height: 3vh;
-      position: relative;
-    }
-
-    .btn-open {
-      position: absolute;
-      bottom: 150px;
-      width: 152px;
-      height: 48px;
-      background-color: black;
-      color: #fff;
-      opacity: 0.8;
-      position: absolute;
-      left: 16px;
-      top: 40px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      border-width: 0;
-      .view-image {
-        color: #fff;
-        text-align: right;
-        font-family: Libre Baskerville;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 2.143px;
-      }
-    }
-
-    .pop-poza {
-      width: 40%;
-      padding: 24px;
-      object-fit: cover;
-      margin: 0 auto;
-    }
-
-    .btn-close {
-      position: absolute;
-      top: 108px;
-      left: 274px;
-      background-color: transparent;
-      padding: 0.5rem 0.7rem;
-      border-width: 0;
-      color: white;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 3px;
-    }
-
-    .overlay {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.9);
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      z-index: 1;
-    }
-    .modal {
-      z-index: 2;
-    }
-    .hidden {
-      display: none;
-    }
-  }
-}
-
-img.art-cover {
-  width: 100%;
-}
-
-span.number {
-  font-size: 100px;
-  font-weight: 700;
-  font-family: "Libre Baskerville", serif;
-  color: #f3f3f3;
-  bottom: -180px;
-  right: -5px;
-  position: absolute;
-}
-
-.art-details {
-  position: absolute;
-  background-color: white;
-  bottom: -90px;
-  left: 0;
-  width: 290px;
-  padding-left: 10px;
-
-  h2 {
-    margin: 10px 0;
-    letter-spacing: 1px;
-  }
-
-  p {
-    margin: 10px 0;
-    color: #7d7d7d;
-    letter-spacing: 2px;
-  }
-
-  .small-image {
-    width: 64px;
-    height: 64px;
-  }
-}
-
-.second-part {
-  position: relative;
-  padding-top: 120px;
-
-  .art-description {
-    color: #7d7d7d;
-    font-size: 14px;
-    line-height: 28px;
-    font-family: "Libre Baskerville", serif;
-    margin-bottom: 54px;
-  }
-  .link {
-    color: #7d7d7d;
-    font-family: Libre Baskerville;
-    font-size: 9px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.929px;
-    text-decoration-line: underline;
-  }
-}
-
-.hr-side1 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-
-    #e5e5e5 60%,
-    #e5e5e5 60%,
-    #e5e5e5 70%,
-    #e5e5e5 70%,
-    #e5e5e5 80%,
-    #e5e5e5 80%,
-    #e5e5e5 95%,
-    black 90%,
-    black 95%,
-    black 100%
-  );
-}
-
-.paragrafe {
-  width: 50%;
-  float: left;
-  padding: 24px;
-  gap: 10px;
-  .a {
-    color: #000;
-    font-family: Libre Baskerville;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 10px;
-  }
-  .b {
-    color: #000;
-    font-family: Libre Baskerville;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 10px;
-    letter-spacing: 1px;
-  }
-}
-.button {
-  width: 32%;
-  float: right;
-  padding: 32px;
-}
-
-/*INDEX2*/
-.hr-side2 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-
-    #e5e5e5 60%,
-    #e5e5e5 60%,
-    #e5e5e5 70%,
-    #e5e5e5 70%,
-    #e5e5e5 80%,
-    #e5e5e5 80%,
-    #e5e5e5 90%,
-    black 90%,
-    black 95%,
-    black 95%,
-    black 100%
-  );
-}
-
-/*INDEX3*/
-.hr-side3 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-
-    #e5e5e5 60%,
-    #e5e5e5 60%,
-    #e5e5e5 70%,
-    #e5e5e5 70%,
-    #e5e5e5 80%,
-    black 80%,
-    black 85%,
-    black 85%,
-    black 90%,
-    black 95%,
-    black 95%,
-    black 100%
-  );
-}
-
-/*INDEX4*/
-.hr-side4 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-
-    #e5e5e5 60%,
-    #e5e5e5 60%,
-    #e5e5e5 70%,
-    black 75%,
-
-    black 80%,
-    black 85%,
-    black 85%,
-    black 90%,
-    black 95%,
-    black 95%,
-    black 100%
-  );
-}
-
-/*INDEX5*/
-.hr-side5 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-
-    #e5e5e5 60%,
-    #e5e5e5 60%,
-    #e5e5e5 70%,
-    black 75%,
-
-    black 80%,
-    black 85%,
-    black 85%,
-    black 90%,
-    black 95%,
-    black 95%,
-    black 100%
-  );
-}
-
-/*  INDEX6*/
-.hr-side6 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-
-    #e5e5e5 60%,
-    #e5e5e5 60%,
-    #e5e5e5 70%,
-    black 75%,
-
-    black 80%,
-    black 85%,
-    black 85%,
-    black 90%,
-    black 95%,
-    black 95%,
-    black 100%
-  );
-}
-/*INDEX 7*/
-.hr-side7 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-    white 65%,
-    black 20%,
-    black 70%,
-    black 85%,
-    black 95%,
-    black 90%,
-    black 100%
-  );
-}
-/*INDEX8*/
-.hr-side8 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-    white 60%,
-    black 20%,
-    black 70%,
-    black 85%,
-    black 95%,
-    black 90%,
-    black 100%
-  );
-}
-/*INDEX9*/
-.link-ermine {
-  color: #7d7d7d;
-  font-family: Libre Baskerville;
-  font-size: 9px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.929px;
-  text-decoration-line: underline;
-  display: flex;
-  margin-top: 51px;
-}
-.hr-side9 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-    white 55%,
-    black 20%,
-    black 70%,
-    black 85%,
-    black 95%,
-    black 90%,
-    black 100%
-  );
-}
-
-/*INDEX 10*/
-.link-nightcoffee {
-  color: #7d7d7d;
-  font-family: Libre Baskerville;
-  font-size: 9px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.929px;
-  text-decoration-line: underline;
-  display: flex;
-  margin-top: 51px;
-}
-.hr-side10 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-    white 50%,
-    black 20%,
-    black 70%,
-    black 85%,
-    black 95%,
-    black 90%,
-    black 100%
-  );
-}
-
-/*INDEX 11*/
-.hr-side11 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-    white 35%,
-    black 20%,
-    black 70%,
-    black 85%,
-    black 95%,
-    black 90%,
-    black 100%
-  );
-}
-/*INDEX12*/
-.hr-side12 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-    white 20%,
-    black 20%,
-    black 70%,
-    black 85%,
-    black 95%,
-    black 90%,
-    black 100%
-  );
-}
-/*INDEX13*/
-.hr-side13 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-    white 15%,
-    black 20%,
-    black 70%,
-    black 85%,
-    black 95%,
-    black 90%,
-    black 100%
-  );
-}
-/*INDEX14*/
-.hr-side14 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-    white 5%,
-    black 20%,
-    black 70%,
-    black 85%,
-    black 95%,
-    black 90%,
-    black 100%
-  );
-}
-/*INDEX15*/
-.hr-side15 {
-  border: 0;
-  height: 1px;
-  margin-top: 67px;
-  background-image: linear-gradient(
-    to left,
-
-    black 20%,
-    black 100%
-  );
-}
-/*index sign-in*/
-
-.form-box {
-  margin: auto;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  .arrow-login {
-    position: absolute;
-
-    position: absolute;
-    top: 46px;
-    left: 47px;
-    font-size: 36px;
-    a {
-      color: black;
-    }
-  }
-  .galleria-log {
-    font-family: "Libre Baskerville", serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 105px;
-    padding-top: 36px;
-    font-weight: bold;
-  }
-
-  #form-example {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    padding-top: 61px;
-    padding: 28px;
-    .label1 {
-      padding: 3px;
-      font-weight: 800;
-      font-size: 19px;
-    }
-    .input {
-      width: 7px;
-      width: 318px;
-      align-self: center;
-      height: 48px;
-      border-radius: 2px solid grey;
-      padding: 5px;
-      font-size: 16px;
-    }
-
-    .forgot {
-      font-size: 13px;
-      align-self: end;
-      padding-right: 38px;
-      padding-top: 8px;
-      color: #1565c0;
-      font-family: "Libre Baskerville", serif;
-    }
-
-    .button1 {
-      width: 318px;
-      height: 48px;
-      background-color: #2196f3;
-      border: none;
-      border-radius: 4px;
-      color: white;
-      font-size: 19px;
-      margin-top: 65px;
-    }
-  }
-}
-.form-box {
-  #form-example2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    padding-top: 61px;
-    padding: 28px;
-    .label {
-      padding: 3px;
-      font-weight: 800;
-      font-size: 19px;
-    }
-    .input2 {
-      width: 7px;
-      width: 318px;
-      align-self: center;
-      height: 48px;
-      border-radius: 2px solid grey;
-      padding: 7px;
-      font-size: 16px;
-    }
-    .register-p2 {
-      font-size: 12px;
-      font-family: "Libre Baskerville", serif;
-      a {
-        text-decoration: none;
-        color: grey;
-        line-height: 2;
-      }
-    }
-
-    .btn-field1 {
-      align-self: center;
-      padding-top: 39px;
-      .button1 {
-        width: 318px;
-        height: 48px;
-        background-color: #2196f3;
-        border: none;
-        border-radius: 4px;
-        color: white;
-        font-size: 65px;
-      }
-    }
-    .btn-field2 {
-      align-self: center;
-      padding-top: -4px;
-      .button1 {
-        width: 318px;
-        height: 48px;
-        background-color: #2196f3;
-        border: none;
-        border-radius: 4px;
-        color: white;
-        font-size: 19px;
-      }
-    }
-    .account {
-      display: flex;
-      justify-content: center;
-
-      .log {
-        font-family: "Libre Baskerville", serif;
-        font-size: 13px;
-      }
-    }
-  }
-}
-//under-construction
-.logo-svg2 {
-  margin-left: 31px;
-  margin-top: 47px;
-}
-.constr-launch {
-  margin-top: 170px;
-  .under-construction {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-      font-size: 17px;
-      font-family: "Libre Baskerville", serif;
-      font-weight: 700;
-    }
-  }
-  .launch-time {
-    display: flex;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 33px;
-    padding: 4px;
-
-    p {
-      font-size: 22px;
-      font-family: "Libre Baskerville", serif;
-    }
-  }
-}
-//about us
-.img-aboutus {
-  margin-left: 21px;
-  margin-top: 33px;
-}
-.about-us {
-  position: relative;
-  margin-top: 10px;
-  .photo-aboutus {
-    display: flex;
-    justify-content: center;
-
-    img {
-      max-width: 100%;
-      height: 400px;
-      width: 600px;
-    }
-
-    p {
-      position: absolute;
-      color: white;
-      font-size: 27px;
-      letter-spacing: 5px;
-      left: 426px;
-      bottom: -20px;
-    }
-  }
-}
-.aboutus-paragraphs {
-  padding: 24px;
-  h4 {
-    line-height: 26px;
-    font-family: "Libre Baskerville", serif;
-    font-size: 21px;
-  }
-  p {
-    line-height: 26px;
-    font-family: "Libre Baskerville", serif;
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   $outer-spacing: 20px;
   $margins: 30px;
   nav {
@@ -979,70 +65,87 @@ span.number {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin-left: -36px;
 
     .search {
-      width: 100%;
       padding-left: 13px;
-
+      width: 90%;
       border: 1px solid grey;
       border-radius: 5px;
       outline: none;
       height: 48px;
       position: relative;
-      width: 325px;
+      max-width: 300px;
+
       margin: 14px;
       color: black;
-      font-size: 16px;
+      font-size: 1em;
     }
     .search-button {
       background: transparent;
       border: none;
       outline: none;
       position: absolute;
-      right: 321px;
-    }
-  }
-  .info-photo {
-    text-align: center;
-    .photos {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      right: 320px;
 
-      .photo-holder {
-        position: relative;
-        .text {
-          color: #f3f3f3;
-
-          h2 {
-            font-family: "Libre Baskerville", serif;
-            font-size: 17px;
-            background: rgba(100, 100, 100, 0.2);
-            padding: 4px 3px;
-            border-radius: 5px;
-          }
-          p {
-            font-family: "Libre Baskerville", serif;
-            color: #e5e5e5;
-            font-size: 12px;
-            background: rgba(100, 100, 100, 0.3);
-            display: inline;
-            position: absolute;
-            left: 30px;
-          }
-        }
-
-        img {
-          width: 100%;
-        }
+      .img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
       }
     }
   }
+
+  .photos {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 23px;
+    max-height: 90%;
+    max-width: 400px;
+    padding: 14px 23px 30px 23px;
+
+    .photo-holder {
+      position: relative;
+      .text {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #f3f3f3;
+
+        h2 {
+          font-family: "Libre Baskerville", serif;
+          font-size: 17px;
+          background: rgba(100, 100, 100, 0.2);
+          padding: 4px 3px;
+          border-radius: 5px;
+        }
+        p {
+          font-family: "Libre Baskerville", serif;
+          color: #e5e5e5;
+          font-size: 12px;
+          background: rgba(100, 100, 100, 0.3);
+          display: inline;
+        }
+      }
+
+      img {
+        max-width: 90%;
+      }
+    }
+  }
+
   .site-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     padding: 20px;
     background-color: #f3f3f3;
+    .logo1 {
+      margin: 0 auto;
+    }
     p {
       font-size: 14px;
       font-family: "Libre Baskerville", serif;
@@ -1057,6 +160,7 @@ span.number {
       text-decoration: underline;
       text-decoration-color: #7d7d7d;
       font-family: "Libre Baskerville", serif;
+      margin-bottom: 1em;
     }
 
     .icons {
@@ -1066,6 +170,7 @@ span.number {
       color: grey;
       margin-bottom: 30px;
       margin-top: 20px;
+      margin: 0 auto;
       a {
         color: black;
       }
@@ -1087,7 +192,7 @@ span.number {
     .terms {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: center;
       gap: 5px;
       font-size: 12px;
       font-family: "Libre Baskerville", serif;
@@ -1115,8 +220,10 @@ span.number {
     padding: 0 24px;
 
     .main-part {
+      margin: 0 auto;
       position: relative;
       padding-top: 24px;
+      max-width: 80%;
       .pop {
         display: flex;
         justify-content: center;
@@ -1132,6 +239,7 @@ span.number {
         background-color: black;
         color: #fff;
         opacity: 0.8;
+        position: absolute;
         left: 16px;
         top: 40px;
         display: flex;
@@ -1152,9 +260,10 @@ span.number {
       }
 
       .pop-poza {
-        width: 100%;
+        width: 40%;
         padding: 24px;
         object-fit: cover;
+        margin: 0 auto;
       }
 
       .btn-close {
@@ -1588,7 +697,6 @@ span.number {
     );
   }
   /*index sign-in*/
-
   .form-box {
     margin: auto;
     align-items: center;
@@ -1609,26 +717,29 @@ span.number {
     }
     .galleria-log {
       font-family: "Libre Baskerville", serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+
       margin-top: 105px;
-      padding-top: 36px;
+      text-align: center;
       font-weight: bold;
     }
 
     #form-example {
-      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       gap: 16px;
       padding-top: 61px;
       padding: 28px;
-
       .label1 {
+        padding: 33px;
+        font-weight: 800;
+        font-size: 19px;
+      }
+      .label2 {
         padding: 4px;
         font-weight: 800;
         font-size: 19px;
       }
-
       .input {
         width: 7px;
         width: 318px;
@@ -1656,7 +767,8 @@ span.number {
         border-radius: 4px;
         color: white;
         font-size: 19px;
-        margin-top: 65px;
+        margin: 0 auto;
+        margin-top: 71px;
       }
     }
   }
@@ -1664,24 +776,38 @@ span.number {
     #form-example2 {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+
       gap: 16px;
       padding-top: 61px;
-      padding: 28px;
-      .label {
+
+      align-items: center;
+
+      .label3 {
+        padding: 17px;
+        font-weight: 800;
+        font-size: 19px;
+      }
+      .label4 {
+        padding: 17px;
+        font-weight: 800;
+        font-size: 19px;
+      }
+      .label5 {
         padding: 3px;
         font-weight: 800;
         font-size: 19px;
       }
+
       .input2 {
         width: 7px;
         width: 318px;
-        align-self: center;
+
         height: 48px;
         border-radius: 2px solid grey;
         padding: 7px;
         font-size: 16px;
       }
+
       .register-p2 {
         font-size: 12px;
         font-family: "Libre Baskerville", serif;
@@ -1716,6 +842,7 @@ span.number {
           border-radius: 4px;
           color: white;
           font-size: 19px;
+          margin-top: 40px;
         }
       }
       .account {
@@ -1729,40 +856,46 @@ span.number {
       }
     }
   }
-  //under-construction
-  .logo-svg2 {
-    margin-left: 31px;
-    margin-top: 47px;
-  }
-  .constr-launch {
-    margin-top: 170px;
-    .under-construction {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+  //SHOP
+  .navbar {
+    border-bottom: 1px solid lightgrey;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-      h1 {
-        font-size: 17px;
-        font-family: "Libre Baskerville", serif;
-        font-weight: 700;
-      }
-    }
-    .launch-time {
-      display: flex;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 33px;
-      padding: 4px;
+    .cart {
+      font-size: 30px;
+      position: relative;
+      padding: 13px;
 
-      p {
-        font-size: 22px;
-        font-family: "Libre Baskerville", serif;
+      .cartAmount {
+        position: absolute; //este absolute fata de parinte, de aia punem la cart position:relative
+        top: 0;
+        right: 0;
+        font-size: 20px;
       }
     }
   }
-  //about us
+  .shop {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 200px); //py a incadra o casuta
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid grey;
+
+    .button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      gap: 4px;
+    }
+  }
+  //ABOUT US
   .img-aboutus {
     margin-left: 21px;
     margin-top: 33px;
@@ -1771,23 +904,29 @@ span.number {
     position: relative;
     margin-top: 10px;
     .photo-aboutus {
+      display: flex;
+      justify-content: center;
+
       img {
-        width: 100%;
+        max-width: 100%;
         height: 400px;
+        width: 600px;
+        object-fit: contain;
       }
 
       p {
         position: absolute;
-        top: 313px;
-        left: 31px;
         color: white;
         font-size: 27px;
         letter-spacing: 5px;
+        left: 520px;
+        bottom: -20px;
       }
     }
   }
   .aboutus-paragraphs {
     padding: 24px;
+    text-align: center;
     h4 {
       line-height: 26px;
       font-family: "Libre Baskerville", serif;
