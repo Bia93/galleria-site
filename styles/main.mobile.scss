@@ -872,9 +872,9 @@ span.number {
 
     .cartAmount {
       position: absolute; //este absolute fata de parinte, de aia punem la cart position:relative
-      top: 0;
-      right: 0;
-      font-size: 20px;
+      top: -4px;
+      right: -2px;
+      font-size: 19px;
     }
   }
 }
