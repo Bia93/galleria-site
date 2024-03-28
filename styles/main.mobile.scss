@@ -869,6 +869,7 @@ span.number {
     font-size: 30px;
     position: relative;
     padding: 13px;
+
     i {
       cursor: pointer;
     }
@@ -891,6 +892,9 @@ span.number {
   .item {
     border: 1px solid lightgrey;
     padding-top: 7px;
+    img {
+      object-fit: contain;
+    }
   }
   .details {
     display: flex;
