@@ -869,6 +869,9 @@ span.number {
     font-size: 30px;
     position: relative;
     padding: 13px;
+    i {
+      cursor: pointer;
+    }
 
     .cartAmount {
       position: absolute; //este absolute fata de parinte, de aia punem la cart position:relative

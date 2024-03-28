@@ -697,6 +697,9 @@ span.number {
   position: relative;
   padding: 13px;
 }
+.navbar .cart i {
+  cursor: pointer;
+}
 .navbar .cart .cartAmount {
   position: absolute;
   top: -4px;
