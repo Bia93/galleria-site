@@ -222,7 +222,7 @@ hr {
   margin: 0 auto;
   position: relative;
   padding-top: 24px;
-  max-width: 80%;
+  max-width: 40%;
 }
 .top-section .main-part .pop {
   display: flex;
@@ -258,16 +258,16 @@ hr {
   letter-spacing: 2.143px;
 }
 .top-section .main-part .pop-poza {
-  width: 40%;
-  padding: 24px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 0 auto;
+  margin: auto;
+  height: auto;
+  width: 72%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .top-section .main-part .btn-close {
   position: absolute;
-  top: 108px;
-  left: 274px;
+  top: 13px;
+  left: 28px;
   background-color: transparent;
   padding: 0.5rem 0.7rem;
   border-width: 0;

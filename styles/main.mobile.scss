@@ -223,7 +223,7 @@ hr {
     margin: 0 auto;
     position: relative;
     padding-top: 24px;
-    max-width: 80%;
+    max-width: 40%;
     .pop {
       display: flex;
       justify-content: center;
@@ -260,16 +260,17 @@ hr {
     }
 
     .pop-poza {
-      width: 40%;
-      padding: 24px;
-      object-fit: cover;
-      margin: 0 auto;
+      margin: auto;
+      height: auto;
+      width: 72%;
+
+      object-fit: contain;
     }
 
     .btn-close {
       position: absolute;
-      top: 108px;
-      left: 274px;
+      top: 13px;
+      left: 28px;
       background-color: transparent;
       padding: 0.5rem 0.7rem;
       border-width: 0;
