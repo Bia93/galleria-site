@@ -262,7 +262,7 @@ hr {
     .pop-poza {
       margin: auto;
       height: auto;
-      width: 52%;
+      width: 50%;
 
       object-fit: contain;
     }
@@ -915,6 +915,118 @@ span.number {
     }
   }
 }
+// CART
+.navbar {
+  .checkout {
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+.main-cart {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  height: 900px;
+
+  .main-cart1 {
+    width: 50%;
+
+    .first-part {
+      .delivery-adress {
+        padding: 5px;
+
+        .delivery {
+          font-size: 20px;
+          letter-spacing: 2px;
+          font-family: "Libre Baskerville", serif;
+        }
+        input[type="text"],
+        select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid grey;
+          border-radius: 4px;
+        }
+
+        input[type="submit"] {
+          width: 100%;
+          background-color: #4caf50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 20px;
+        }
+
+        input[type="submit"]:hover {
+          background-color: #45a049;
+        }
+
+        div {
+          border-radius: 5px;
+          background-color: white;
+          padding: 30px;
+        }
+        label {
+          color: grey;
+          font-size: 16px;
+          font-weight: bold;
+          font-family: "Libre Baskerville", serif;
+          letter-spacing: 2px;
+          padding: 5px;
+        }
+      }
+    }
+    .main-cart2 {
+      width: 100%;
+      border: 1px solid red;
+    }
+  }
+  .main-cart2 {
+    width: 700px;
+    height: 500px;
+
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center;
+    .text-totalclear {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; //style rules for label and some buttons -din cart.htl si cart js (faza cu cart is empty din cart.js)
+      .h4-emptycart {
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 2px;
+        margin: 0;
+      }
+      .h5-emptycart {
+        color: #7d7d7d;
+        letter-spacing: 2px;
+      }
+
+      .homeBtn {
+        font-size: 20px;
+        padding: 10px;
+        color: white;
+        background-color: #1565c0;
+        border-width: 0;
+        cursor: pointer;
+        margin: 30px 0;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
 //ABOUT US
 .img-aboutus {
   margin-left: 21px;
