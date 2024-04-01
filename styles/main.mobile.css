@@ -749,14 +749,15 @@ span.number {
 
 .main-cart {
   max-width: 90%;
-  margin: 0 auto;
+  margin: 40px;
   margin-top: 30px;
   display: flex;
   justify-content: flex-start;
   height: 900px;
+  gap: 50px;
 }
 .main-cart .main-cart1 {
-  width: 50%;
+  width: 40%;
 }
 .main-cart .main-cart1 .first-part .delivery-adress {
   padding: 5px;
@@ -802,22 +803,19 @@ span.number {
   letter-spacing: 2px;
   padding: 5px;
 }
-.main-cart .main-cart1 .main-cart2 {
-  width: 100%;
-  border: 1px solid red;
-}
 .main-cart .main-cart2 {
-  width: 700px;
-  height: 500px;
+  width: 70%;
+  height: auto;
   display: flex;
   justify-content: center; /* horizontally center */
-  align-items: center;
+  align-items: flex-start;
 }
 .main-cart .main-cart2 .text-totalclear {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 109px;
 }
 .main-cart .main-cart2 .text-totalclear .h4-emptycart {
   font-size: 20px;
@@ -838,6 +836,55 @@ span.number {
   cursor: pointer;
   margin: 30px 0;
   border-radius: 3px;
+}
+.main-cart .main-cart2 .shopping-cart {
+  display: grid;
+  margin-top: 83px;
+}
+.main-cart .main-cart2 .shopping-cart .cart-item {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  border: 1px solid lightgrey;
+  align-items: center;
+  gap: 9px;
+  padding: 0 11px;
+  position: relative;
+}
+.main-cart .main-cart2 .shopping-cart .cart-item .button-cart {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  align-items: center;
+}
+.main-cart .main-cart2 .shopping-cart .cart-item .image-checkout {
+  margin: 0;
+}
+.main-cart .main-cart2 .shopping-cart .cart-item .details-checkout {
+  width: 241px;
+  height: auto;
+}
+.main-cart .main-cart2 .shopping-cart .cart-item .details-checkout .h5-price {
+  border: 0;
+  margin: 11px;
+  color: #7d7d7d;
+  font-size: 20px;
+}
+.main-cart .main-cart2 .shopping-cart .cart-item .fa-xmark {
+  color: #7d7d7d;
+  font-size: 21px;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main-cart .main-cart2 .shopping-cart .cart-item .p-name {
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.main-cart .main-cart2 .shopping-cart .subtotal {
+  font-size: 18px;
 }
 
 .img-aboutus {

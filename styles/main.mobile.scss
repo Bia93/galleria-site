@@ -926,14 +926,15 @@ span.number {
 }
 .main-cart {
   max-width: 90%;
-  margin: 0 auto;
+  margin: 40px;
   margin-top: 30px;
   display: flex;
   justify-content: flex-start;
   height: 900px;
+  gap: 50px;
 
   .main-cart1 {
-    width: 50%;
+    width: 40%;
 
     .first-part {
       .delivery-adress {
@@ -985,23 +986,21 @@ span.number {
         }
       }
     }
-    .main-cart2 {
-      width: 100%;
-      border: 1px solid red;
-    }
   }
   .main-cart2 {
-    width: 700px;
-    height: 500px;
+    width: 70%;
+    height: auto;
 
     display: flex;
     justify-content: center; /* horizontally center */
-    align-items: center;
+    align-items: flex-start;
+
     .text-totalclear {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; //style rules for label and some buttons -din cart.htl si cart js (faza cu cart is empty din cart.js)
+      margin-top: 109px;
       .h4-emptycart {
         font-size: 20px;
         font-family: "Roboto", sans-serif;
@@ -1022,6 +1021,58 @@ span.number {
         cursor: pointer;
         margin: 30px 0;
         border-radius: 3px;
+      }
+    }
+    .shopping-cart {
+      display: grid;
+
+      margin-top: 83px;
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        border: 1px solid lightgrey;
+        align-items: center;
+        gap: 9px;
+        padding: 0 11px;
+        position: relative;
+        .button-cart {
+          display: flex;
+          flex-direction: row;
+          gap: 7px;
+          align-items: center;
+        }
+
+        .image-checkout {
+          margin: 0;
+        }
+        .details-checkout {
+          width: 241px;
+          height: auto;
+
+          .h5-price {
+            border: 0;
+            margin: 11px;
+            color: #7d7d7d;
+            font-size: 20px;
+          }
+        }
+        .fa-xmark {
+          color: #7d7d7d;
+          font-size: 21px;
+          margin: 10px;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+        .p-name {
+          font-size: 15px;
+          margin-top: 10px;
+          font-family: "Roboto", sans-serif;
+        }
+      }
+      .subtotal {
+        font-size: 18px;
       }
     }
   }
