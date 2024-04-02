@@ -990,7 +990,7 @@ span.number {
   .main-cart2 {
     width: 70%;
     height: auto;
-
+    position: relative;
     display: flex;
     justify-content: center; /* horizontally center */
     align-items: flex-start;
@@ -1001,6 +1001,14 @@ span.number {
       align-items: center;
       flex-direction: column; //style rules for label and some buttons -din cart.htl si cart js (faza cu cart is empty din cart.js)
       margin-top: 109px;
+      position: absolute;
+      top: -36px;
+      .h3-reduce {
+        margin: -15px;
+        font-family: "Roboto", Sans-Serif;
+        font-weight: bold;
+        font-size: 23px;
+      }
       .h4-emptycart {
         font-size: 20px;
         font-family: "Roboto", sans-serif;
@@ -1026,7 +1034,7 @@ span.number {
     .shopping-cart {
       display: grid;
 
-      margin-top: 83px;
+      margin-top: 122px;
       .cart-item {
         display: flex;
         justify-content: space-between;
@@ -1034,7 +1042,7 @@ span.number {
         border: 1px solid lightgrey;
         align-items: center;
         gap: 9px;
-        padding: 0 11px;
+        padding: 0 14px;
         position: relative;
         .button-cart {
           display: flex;

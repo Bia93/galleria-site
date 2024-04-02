@@ -117,14 +117,30 @@ let update = (id) => {
   });
   //console.log(search.item);
   document.getElementById(id).innerHTML = search.item; //asa adaugam numerele in pagina web // o apelam pt ca atunci cand functioa update se trigaruieste, sa trigaruieste si  let calculation
+  totalAmount();
 };
 let removeItem = (id) => {
   // scriem asta pt ca atunci cand apasam pe x sa se stearga casuta plus ca am mai adaugat la <i  onclick="decrement(${id})" class="fa-solid fa-minus"></i>
-  let selectedItem1 = id;
-  //console.log(selectedItem1.id);
-  basket = basket.filter((z) => {
-    z.id !== selectedItem1.id; // atunci cand voi apasa pe x imi va da remove la items in the cart si apoi isi va da update la basket
-  });
+  let selectedItem = id;
+  //console.log(selectedItem.id);
+  basket = basket.filter((x) => x.id !== selectedItem.id);
   generateCartItems();
+  totalAmount();
   localStorage.setItem("data", JSON.stringify(basket));
 };
+let totalAmount = () => {
+  //functie pt totalul de suma
+  if (basket.length !== 0) {
+    let amount = basket
+      .map((x) => {
+        let { id, item } = x; // we are gonna use id and search in our data .js
+        let search = shopItemsData.find((y) => y.id === id) || [];
+        return item * search.price;
+      })
+      .reduce((x, y) => x + y, 0);
+    label.innerHTML = ` <h3 class= "h3-reduce">Total to pay: € ${amount}</h3>
+      `;
+    // console.log(amount);
+  } else return {}; //else return- inseamnca do not do anything just stop the process
+};
+totalAmount();

@@ -806,6 +806,7 @@ span.number {
 .main-cart .main-cart2 {
   width: 70%;
   height: auto;
+  position: relative;
   display: flex;
   justify-content: center; /* horizontally center */
   align-items: flex-start;
@@ -816,6 +817,14 @@ span.number {
   align-items: center;
   flex-direction: column;
   margin-top: 109px;
+  position: absolute;
+  top: -36px;
+}
+.main-cart .main-cart2 .text-totalclear .h3-reduce {
+  margin: -15px;
+  font-family: "Roboto", Sans-Serif;
+  font-weight: bold;
+  font-size: 23px;
 }
 .main-cart .main-cart2 .text-totalclear .h4-emptycart {
   font-size: 20px;
@@ -839,7 +848,7 @@ span.number {
 }
 .main-cart .main-cart2 .shopping-cart {
   display: grid;
-  margin-top: 83px;
+  margin-top: 122px;
 }
 .main-cart .main-cart2 .shopping-cart .cart-item {
   display: flex;
@@ -848,7 +857,7 @@ span.number {
   border: 1px solid lightgrey;
   align-items: center;
   gap: 9px;
-  padding: 0 11px;
+  padding: 0 14px;
   position: relative;
 }
 .main-cart .main-cart2 .shopping-cart .cart-item .button-cart {
