@@ -20,13 +20,13 @@ function generatePaintings() {
     a.appendChild(image);
     a.appendChild(divImage);
     //a.setAttribute("href", "./index1.html");
-    let pageUrls = [
-      "./index1.html",
-      "./index2.html",
-      "./index3.html",
-      "./index4.html",
-      "./index5.html",
-      "./index6.html",
+    /*let pageUrls = [
+      "/index1.html",
+      "/index2.html",
+      "/index3.html",
+      "/index4.html",
+      "/index5.html",
+      "/index6.html",
       "./index7.html",
       "./index8.html",
       "./index9.html",
@@ -45,7 +45,7 @@ function generatePaintings() {
         "href",
         `${pageUrls[i % pageUrls.length]}`
       );
-    }
+    }*/
     const title = document.createElement("h2");
     title.textContent = `${painting.title}`;
     divImage.appendChild(title);

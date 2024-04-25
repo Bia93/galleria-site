@@ -2,57 +2,25 @@
 
 $outer-spacing: 20px;
 $margins: 30px;
-nav {
-  margin: auto;
-  .logo-svg {
-    position: absolute;
-    left: 24px;
-    top: 30px;
+.nav-bar1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+
+  .menu-desktop1 {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
   }
-
-  .sidebar {
-    height: 100%;
-
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    padding-top: 80px;
-    transition: 0.5s;
-
+  li {
     a {
-      padding: 12px 32px;
+      color: black;
       text-decoration: none;
-      font-size: 25px;
-      color: white;
-      display: block;
-      transition: 0.3s;
+      font-size: 20px;
+      font-family: "Libre Baskerville", serif;
     }
   }
-}
-.closebtn {
-  .fa-solid {
-    position: absolute;
-    top: 63px;
-  }
-}
-
-.openbtn {
-  font-size: 35px;
-  background-color: white;
-  color: black;
-  border: none;
-}
-
-#main {
-  transition: margin-left 0.3s;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
 
 hr {
