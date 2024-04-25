@@ -20,13 +20,13 @@ function generatePaintings() {
     a.appendChild(image);
     a.appendChild(divImage);
     //a.setAttribute("href", "./index1.html");
-    /*let pageUrls = [
-      "/index1.html",
-      "/index2.html",
-      "/index3.html",
-      "/index4.html",
-      "/index5.html",
-      "/index6.html",
+    let pageUrls = [
+      "./index1.html",
+      "./index2.html",
+      "./index3.html",
+      "./index4.html",
+      "./index5.html",
+      "./index6.html",
       "./index7.html",
       "./index8.html",
       "./index9.html",
@@ -37,15 +37,15 @@ function generatePaintings() {
       "./index14.html",
       "./index15.html",
     ];
-    var anchorElements = document.querySelectorAll("a");
-    // loop through each anchor element and set its href attribute
+    var anchorElements = document.querySelectorAll(".photo-holder");
+    //loop through each anchor element and set its href attribute
     for (var i = 0; i < anchorElements.length; i++) {
       // set href attribute to corresponding URL from the array
       anchorElements[i].setAttribute(
         "href",
         `${pageUrls[i % pageUrls.length]}`
       );
-    }*/
+    }
     const title = document.createElement("h2");
     title.textContent = `${painting.title}`;
     divImage.appendChild(title);
