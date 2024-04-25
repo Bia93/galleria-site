@@ -39,7 +39,7 @@ nav .sidebar a {
 
 .closebtn .fa-solid {
   position: absolute;
-  top: 41px;
+  top: 63px;
 }
 
 .openbtn {
@@ -63,41 +63,25 @@ hr {
   height: 1px;
 }
 
-.magny {
+.search {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  margin-left: -36px;
+  padding: 30px;
 }
-.magny .search {
-  padding-left: 13px;
-  width: 90%;
-  border: 1px solid grey;
+.search .searchTerm {
+  border: 1px solid lightgrey;
+  padding: 5px;
+  height: 36px;
   border-radius: 5px;
   outline: none;
-  height: 48px;
-  position: relative;
-  max-width: 300px;
-  margin: 14px;
-  color: black;
-  font-size: 1em;
-}
-.magny .search-button {
-  background: transparent;
-  border: none;
-  outline: none;
-  position: absolute;
-  right: 320px;
-}
-.magny .search-button .img {
-  width: 40px;
-  height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding: 20px 0;
+  width: 348px;
+  padding: 10px;
+  font-size: 17px;
+  height: 50px;
 }
 
-.photos {
+.info-photos {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -108,31 +92,33 @@ hr {
   max-width: 400px;
   padding: 14px 23px 30px 23px;
 }
-.photos .photo-holder {
+.info-photos .photo-holder {
   position: relative;
 }
-.photos .photo-holder .text {
+.info-photos .photo-holder .text {
   position: absolute;
   bottom: 10px;
   left: 10px;
   color: #f3f3f3;
 }
-.photos .photo-holder .text h2 {
+.info-photos .photo-holder .text h2 {
   font-family: "Libre Baskerville", serif;
   font-size: 17px;
   background: rgba(100, 100, 100, 0.2);
   padding: 4px 3px;
   border-radius: 5px;
 }
-.photos .photo-holder .text p {
+.info-photos .photo-holder .text p {
   font-family: "Libre Baskerville", serif;
   color: #e5e5e5;
   font-size: 12px;
   background: rgba(100, 100, 100, 0.3);
   display: inline;
 }
-.photos .photo-holder img {
-  max-width: 90%;
+.info-photos .photo-holder img {
+  width: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .site-footer {

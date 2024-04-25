@@ -1,0 +1,16 @@
+{
+  "name": "galleria-site",
+  "version": "1.0.0",
+  "description": "A website about an art gallery showcases a collection of artworks from various artists",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
