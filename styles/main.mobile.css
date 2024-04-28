@@ -4,26 +4,71 @@
 
 html,
 body {
-  padding: 0;
+  padding-top: 0;
   margin: 0;
 }
 
-.nav-bar1 {
-  width: 100%;
+.topnav {
   display: flex;
   justify-content: space-between;
-  padding: 18px;
+  align-items: center;
+  padding: 1.5rem;
 }
-.nav-bar1 .menu-desktop1 {
-  list-style-type: none;
-  display: flex;
-  gap: 30px;
-}
-.nav-bar1 li a {
+.topnav button {
+  background: none;
+  border: none;
   color: black;
-  text-decoration: none;
+  font-size: 25px;
+  padding: 1rem;
+}
+@media (width > 720px) {
+  .topnav button {
+    display: none;
+  }
+}
+.topnav_open[aria-expanded=true] + .topnav_menu {
+  translate: 0;
+}
+.topnav_close {
+  display: block;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+}
+@media (width < 720px) {
+  .topnav_menu {
+    background-color: white;
+    position: fixed;
+    inset: 0;
+    translate: 100vw 0;
+    transition: 0.3 ease-in-out;
+    z-index: 1;
+  }
+}
+.topnav_links {
+  margin: 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+@media (width < 720px) {
+  .topnav_links {
+    flex-direction: column;
+    margin: 6rem;
+  }
+}
+.topnav_item {
+  list-style-type: none;
   font-size: 20px;
+  border-radius: 3px;
   font-family: "Libre Baskerville", serif;
+}
+.topnav_link {
+  text-decoration: none;
+  transition: all 0.4s;
+  color: black;
+}
+.topnav_link:hover {
+  color: grey;
 }
 
 hr {
@@ -35,7 +80,7 @@ hr {
 .search {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 38px;
 }
 .search .searchTerm {
   border: 1px solid lightgrey;
@@ -871,14 +916,6 @@ span.number {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.about-us .photo-aboutus p {
-  position: absolute;
-  color: white;
-  font-size: 27px;
-  letter-spacing: 5px;
-  left: 520px;
-  bottom: -20px;
-}
 
 .aboutus-paragraphs {
   padding: 24px;
@@ -895,7 +932,7 @@ span.number {
   font-size: 18px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 720px) {
   .shop {
     grid-template-columns: repeat(2, 235px);
   }

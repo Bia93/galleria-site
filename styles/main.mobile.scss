@@ -2,27 +2,71 @@
 
 $outer-spacing: 20px;
 $margins: 30px;
-.nav-bar1 {
-  width: 100%;
+
+.topnav {
   display: flex;
   justify-content: space-between;
-  padding: 18px;
+  align-items: center;
+  padding: 1.5rem;
 
-  .menu-desktop1 {
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
+  button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 25px;
+    padding: 1rem;
+
+    @media (width >720px) {
+      // pt ca butoanele sa dispara on varianta desktop
+      display: none;
+    }
   }
-  li {
-    a {
-      color: black;
-      text-decoration: none;
-      font-size: 20px;
-      font-family: "Libre Baskerville", serif;
+  &_open[aria-expanded="true"] {
+    + .topnav_menu {
+      translate: 0;
+    }
+  }
+  &_close {
+    display: block;
+    margin-inline-start: auto;
+  }
+  &_menu {
+    @media (width<720px) {
+      background-color: white;
+      position: fixed;
+      inset: 0;
+      translate: 100vw 0;
+      transition: 0.3 ease-in-out;
+      z-index: 1;
+    }
+  }
+
+  &_links {
+    margin: 1rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    @media (width<720px) {
+      flex-direction: column;
+      margin: 6rem;
+    }
+  }
+  &_item {
+    list-style-type: none;
+    font-size: 20px;
+    border-radius: 3px;
+    font-family: "Libre Baskerville", serif;
+  }
+  &_link {
+    text-decoration: none;
+    transition: all 0.4s;
+    color: black;
+
+    &:hover {
+      color: grey;
     }
   }
 }
-
 hr {
   background: #e5e5e5;
   border: none;
@@ -32,7 +76,7 @@ hr {
 .search {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 38px;
 
   .searchTerm {
     border: 1px solid lightgrey;
@@ -1056,15 +1100,6 @@ span.number {
       width: 600px;
       object-fit: contain;
     }
-
-    p {
-      position: absolute;
-      color: white;
-      font-size: 27px;
-      letter-spacing: 5px;
-      left: 520px;
-      bottom: -20px;
-    }
   }
 }
 .aboutus-paragraphs {
@@ -1081,8 +1116,7 @@ span.number {
     font-size: 18px;
   }
 }
-
-@media (max-width: 1000px) {
+@media (max-width: 720px) {
   .shop {
     grid-template-columns: repeat(2, 235px); //py a incadra o casuta
   }

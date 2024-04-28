@@ -21,25 +21,39 @@
     <link href="./styles/main.mobile.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="nav-bar1">
+    <header class="topnav wrapper">
       <img class="logo-svg" src="./photos/logo.svg" alt="logo gallery" />
-
-      <ul class="menu-desktop1">
-        <li>
-          <a href="/galleria-site/about-us.html">About us</a>
-        </li>
-        <li>
-          <a href="/galleria-site/shop.html">Shop</a>
-        </li>
-        <li>
-          <a href="/galleria-site/sign-in.html">Sign in</a>
-        </li>
-        <li>
-          <a href="/galleria-site/sign-up.html">Sign up</a>
-        </li>
-      </ul>
-    </nav>
-
+      <nav>
+        <button class="topnav_open" id="btnOpen" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="topnav_menu" role="dialog">
+          <button class="topnav_close" id="btnClose">
+            <i class="fa-solid fa-x"></i>
+          </button>
+          <ul class="topnav_links">
+            <li class="topnav_item">
+              <a href="/galleria-site/about-us.html" class="topnav_link"
+                >About us</a
+              >
+            </li>
+            <li class="topnav_item">
+              <a href="/galleria-site/shop.html" class="topnav_link">Shop</a>
+            </li>
+            <li class="topnav_item">
+              <a href="/galleria-site/sign-in.html" class="topnav_link"
+                >Sign in</a
+              >
+            </li>
+            <li class="topnav_item">
+              <a href="/galleria-site/sign-up.html" class="topnav_link"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <hr />
     <div class="search">
       <input
@@ -88,7 +102,7 @@
         <p>&copy; 2023 The Galleria Foundation</p>
       </div>
     </footer>
-
+    <script src="menu.js"></script>
     <script src="domScript.js"></script>
   </body>
 </html>
