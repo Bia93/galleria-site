@@ -761,33 +761,32 @@ span.number {
     padding-top: 61px;
     max-width: 100%;
     align-items: center;
+    .label-input2 {
+      display: flex;
+      flex-direction: column;
+      .label3 {
+        font-weight: 800;
+        font-size: 19px;
+      }
+      .label4 {
+        font-weight: 800;
+        font-size: 19px;
+      }
+      .label5 {
+        font-weight: 800;
+        font-size: 19px;
+      }
 
-    .label3 {
-      padding: 17px;
-      font-weight: 800;
-      font-size: 19px;
-    }
-    .label4 {
-      padding: 17px;
-      font-weight: 800;
-      font-size: 19px;
-    }
-    .label5 {
-      padding: 3px;
-      font-weight: 800;
-      font-size: 19px;
-    }
+      .input2 {
+        width: 7px;
+        width: 318px;
 
-    .input2 {
-      width: 7px;
-      width: 318px;
-
-      height: 48px;
-      border-radius: 2px solid grey;
-      padding: 7px;
-      font-size: 16px;
+        height: 48px;
+        border-radius: 2px solid grey;
+        padding: 7px;
+        font-size: 16px;
+      }
     }
-
     .register-p2 {
       font-size: 12px;
       font-family: "Libre Baskerville", serif;

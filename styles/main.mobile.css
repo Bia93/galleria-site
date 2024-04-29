@@ -595,22 +595,23 @@ span.number {
   max-width: 100%;
   align-items: center;
 }
-.form-box #form-example2 .label3 {
-  padding: 17px;
+.form-box #form-example2 .label-input2 {
+  display: flex;
+  flex-direction: column;
+}
+.form-box #form-example2 .label-input2 .label3 {
   font-weight: 800;
   font-size: 19px;
 }
-.form-box #form-example2 .label4 {
-  padding: 17px;
+.form-box #form-example2 .label-input2 .label4 {
   font-weight: 800;
   font-size: 19px;
 }
-.form-box #form-example2 .label5 {
-  padding: 3px;
+.form-box #form-example2 .label-input2 .label5 {
   font-weight: 800;
   font-size: 19px;
 }
-.form-box #form-example2 .input2 {
+.form-box #form-example2 .label-input2 .input2 {
   width: 7px;
   width: 318px;
   height: 48px;
