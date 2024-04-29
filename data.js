@@ -116,7 +116,7 @@ let shopItemsData = [
     name: "The boy in red vest",
     price: 5,
     desc: "material: paper",
-    img: "./photos/boy in red vest.jpg",
+    img: "./photos/boy.jpg",
   },
   {
     id: "twelve",
@@ -130,7 +130,7 @@ let shopItemsData = [
     name: "The swing",
     price: 5,
     desc: "material: paper",
-    img: "./photos/the swing.jpg",
+    img: "./photos/swing.jpg",
   },
   {
     id: "twelve",

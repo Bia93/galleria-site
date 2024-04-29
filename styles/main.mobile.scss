@@ -204,6 +204,8 @@ hr {
     position: relative;
     padding-top: 24px;
     max-width: 40%;
+    // max-width: 100%;
+
     .pop {
       display: flex;
       justify-content: center;
@@ -285,8 +287,8 @@ hr {
   }
 }
 
-img.art-cover {
-  width: 100%;
+.art-cover {
+  max-width: 100%;
 }
 
 span.number {
@@ -709,27 +711,29 @@ span.number {
     justify-content: center;
     gap: 16px;
     padding-top: 61px;
-    padding: 28px;
-    .label1 {
-      padding: 33px;
-      font-weight: 800;
-      font-size: 19px;
+    padding-bottom: 226px;
+    .label-input {
+      flex-direction: column;
+      display: flex;
+      gap: 5px;
+      .label1 {
+        font-weight: 800;
+        font-size: 19px;
+      }
+      .label2 {
+        font-weight: 800;
+        font-size: 19px;
+      }
+      .input {
+        width: 7px;
+        width: 318px;
+        align-self: center;
+        height: 48px;
+        border-radius: 2px solid grey;
+        padding: 5px;
+        font-size: 16px;
+      }
     }
-    .label2 {
-      padding: 4px;
-      font-weight: 800;
-      font-size: 19px;
-    }
-    .input {
-      width: 7px;
-      width: 318px;
-      align-self: center;
-      height: 48px;
-      border-radius: 2px solid grey;
-      padding: 5px;
-      font-size: 16px;
-    }
-
     .forgot {
       font-size: 13px;
       align-self: end;
@@ -752,6 +756,7 @@ span.number {
     }
   }
 }
+//----SIGN-UP------
 .form-box {
   #form-example2 {
     display: flex;
@@ -759,11 +764,13 @@ span.number {
     margin-bottom: 57px;
     gap: 16px;
     padding-top: 61px;
+    padding-bottom: 119px;
     max-width: 100%;
     align-items: center;
     .label-input2 {
       display: flex;
       flex-direction: column;
+      gap: 5px;
       .label3 {
         font-weight: 800;
         font-size: 19px;
@@ -790,6 +797,7 @@ span.number {
     .register-p2 {
       font-size: 12px;
       font-family: "Libre Baskerville", serif;
+      margin: 19px;
       a {
         text-decoration: none;
         color: grey;
@@ -814,7 +822,7 @@ span.number {
       align-self: center;
       padding-top: -4px;
       .button1 {
-        width: 415px;
+        width: 318px;
         height: 52px;
         background-color: #2196f3;
         border: none;
@@ -1067,8 +1075,9 @@ span.number {
 
 //ABOUT US
 .img-aboutus {
-  margin-left: 21px;
-  margin-top: 33px;
+  padding: 1.5rem;
+  margin-left: -0.5rem;
+  margin-top: 0.4375rem;
 }
 .about-us {
   position: relative;
@@ -1124,7 +1133,8 @@ span.number {
       }
     }
   }
-
+  .art-cover {
+  }
   .shop {
     grid-template-columns: repeat(2, 235px); //py a incadra o casuta
   }
@@ -1144,6 +1154,13 @@ span.number {
         translate: 100vw 0;
         transition: 0.3 ease-in-out;
         z-index: 1;
+      }
+    }
+    &_links {
+      @media (width<720px) {
+        flex-direction: column;
+        margin: 6rem;
+        padding: 0;
       }
     }
   }

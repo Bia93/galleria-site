@@ -277,8 +277,8 @@ hr {
   display: none;
 }
 
-img.art-cover {
-  width: 100%;
+.art-cover {
+  max-width: 100%;
 }
 
 span.number {
@@ -545,19 +545,22 @@ span.number {
   justify-content: center;
   gap: 16px;
   padding-top: 61px;
-  padding: 28px;
+  padding-bottom: 226px;
 }
-.form-box #form-example .label1 {
-  padding: 33px;
+.form-box #form-example .label-input {
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+}
+.form-box #form-example .label-input .label1 {
   font-weight: 800;
   font-size: 19px;
 }
-.form-box #form-example .label2 {
-  padding: 4px;
+.form-box #form-example .label-input .label2 {
   font-weight: 800;
   font-size: 19px;
 }
-.form-box #form-example .input {
+.form-box #form-example .label-input .input {
   width: 7px;
   width: 318px;
   align-self: center;
@@ -592,12 +595,14 @@ span.number {
   margin-bottom: 57px;
   gap: 16px;
   padding-top: 61px;
+  padding-bottom: 119px;
   max-width: 100%;
   align-items: center;
 }
 .form-box #form-example2 .label-input2 {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 .form-box #form-example2 .label-input2 .label3 {
   font-weight: 800;
@@ -622,6 +627,7 @@ span.number {
 .form-box #form-example2 .register-p2 {
   font-size: 12px;
   font-family: "Libre Baskerville", serif;
+  margin: 19px;
 }
 .form-box #form-example2 .register-p2 a {
   text-decoration: none;
@@ -646,7 +652,7 @@ span.number {
   padding-top: -4px;
 }
 .form-box #form-example2 .btn-field2 .button1 {
-  width: 415px;
+  width: 318px;
   height: 52px;
   background-color: #2196f3;
   border: none;
@@ -878,8 +884,9 @@ span.number {
 }
 
 .img-aboutus {
-  margin-left: 21px;
-  margin-top: 33px;
+  padding: 1.5rem;
+  margin-left: -0.5rem;
+  margin-top: 0.4375rem;
 }
 
 .about-us {
@@ -953,6 +960,13 @@ span.number {
     translate: 100vw 0;
     transition: 0.3 ease-in-out;
     z-index: 1;
+  }
+}
+@media (max-width: 500px) and (width < 720px) {
+  .topnav_links {
+    flex-direction: column;
+    margin: 6rem;
+    padding: 0;
   }
 }
 @media (max-width: 500px) {
