@@ -200,7 +200,7 @@ hr {
   margin: 0 auto;
   position: relative;
   padding-top: 24px;
-  max-width: 40%;
+  min-height: 237px;
 }
 .top-section .main-part .pop {
   display: flex;

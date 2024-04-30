@@ -203,8 +203,9 @@ hr {
     margin: 0 auto;
     position: relative;
     padding-top: 24px;
-    max-width: 40%;
+    //max-width: 40%;
     // max-width: 100%;
+    min-height: 237px;
 
     .pop {
       display: flex;
@@ -1133,8 +1134,7 @@ span.number {
       }
     }
   }
-  .art-cover {
-  }
+
   .shop {
     grid-template-columns: repeat(2, 235px); //py a incadra o casuta
   }
