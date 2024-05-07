@@ -1043,7 +1043,7 @@ span.number {
           margin: 0;
         }
         .details-checkout {
-          width: 241px;
+          max-width: 241px;
           height: auto;
 
           .h5-price {
@@ -1131,6 +1131,75 @@ span.number {
         flex-direction: column;
         margin: 6rem;
         padding: 0;
+      }
+    }
+  }
+  .overlay {
+    .pop-poza {
+      width: 200px;
+    }
+  }
+  .main-cart {
+    max-width: 90%;
+    margin: 20px; /* Reduce margin for mobile */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically for mobile */
+    gap: 20px; /* Add gap between elements */
+
+    .main-cart1 {
+      width: 100%; /* Full width for mobile */
+      .first-part {
+        .delivery-adress {
+          padding: 10px; /* Increase padding for mobile */
+
+          .delivery {
+            font-size: 18px; /* Reduce font size for mobile */
+          }
+          input[type="text"],
+          select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid grey;
+            border-radius: 4px;
+            font-size: 16px; /* Reduce font size for mobile */
+          }
+
+          input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px; /* Reduce font size for mobile */
+          }
+        }
+      }
+    }
+
+    .main-cart2 {
+      width: 100%;
+      margin-top: 74px;
+      .shopping-cart {
+        margin-top: 61px;
+
+        .cart-item {
+          //height: auto; /* Adjust height dynamically based on content */
+          max-width: 100%;
+          padding: 0;
+          gap: 0;
+        }
+        .subtotal {
+          font-size: 16px; /* Reduce font size for mobile */
+        }
+      }
+      .text-totalclear {
+        margin-top: 20px;
+        .homeBtn {
+          margin: 20px 0;
+          font-size: 16px; /* Reduce font size for mobile */
+        }
       }
     }
   }

@@ -857,7 +857,7 @@ span.number {
   margin: 0;
 }
 .main-cart .main-cart2 .shopping-cart .cart-item .details-checkout {
-  width: 241px;
+  max-width: 241px;
   height: auto;
 }
 .main-cart .main-cart2 .shopping-cart .cart-item .details-checkout .h5-price {
@@ -940,6 +940,69 @@ span.number {
     flex-direction: column;
     margin: 6rem;
     padding: 0;
+  }
+}
+@media (max-width: 720px) {
+  .overlay .pop-poza {
+    width: 200px;
+  }
+}
+@media (max-width: 720px) {
+  .main-cart {
+    max-width: 90%;
+    margin: 20px; /* Reduce margin for mobile */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically for mobile */
+    gap: 20px; /* Add gap between elements */
+  }
+  .main-cart .main-cart1 {
+    width: 100%; /* Full width for mobile */
+  }
+  .main-cart .main-cart1 .first-part .delivery-adress {
+    padding: 10px; /* Increase padding for mobile */
+  }
+  .main-cart .main-cart1 .first-part .delivery-adress .delivery {
+    font-size: 18px; /* Reduce font size for mobile */
+  }
+  .main-cart .main-cart1 .first-part .delivery-adress input[type=text],
+.main-cart .main-cart1 .first-part .delivery-adress select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 16px; /* Reduce font size for mobile */
+  }
+  .main-cart .main-cart1 .first-part .delivery-adress input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; /* Reduce font size for mobile */
+  }
+  .main-cart .main-cart2 {
+    width: 100%;
+    margin-top: 74px;
+  }
+  .main-cart .main-cart2 .shopping-cart {
+    margin-top: 61px;
+  }
+  .main-cart .main-cart2 .shopping-cart .cart-item {
+    max-width: 100%;
+    padding: 0;
+    gap: 0;
+  }
+  .main-cart .main-cart2 .shopping-cart .subtotal {
+    font-size: 16px; /* Reduce font size for mobile */
+  }
+  .main-cart .main-cart2 .text-totalclear {
+    margin-top: 20px;
+  }
+  .main-cart .main-cart2 .text-totalclear .homeBtn {
+    margin: 20px 0;
+    font-size: 16px; /* Reduce font size for mobile */
   }
 }
 @media (max-width: 720px) {
