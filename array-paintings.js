@@ -113,13 +113,16 @@ function search() {
   }
 }
 search();*/
-function search() {
-  const searchbox = document.getElementById("search-item").value.toLowerCase();
-  const product = document.querySelectorAll(".info-photo");
+function search(e) {
+  //e-event de tip input
+  const searchbox = e.value.toLowerCase(); //.value is a property in JavaScript that retrieves the current value of an input field in a form. Essentially, it returns the value entered into an HTML input element, such as a text box.
+
+  const product = document.querySelectorAll(".info-photos");
+  console.log(product);
 
   for (let i = 0; i < paintings.length; i++) {
     let title = paintings[i].title.toLowerCase(); // Access the title property directly and convert to lowercase
-    console.log(title);
+    console.table(title); //doar pt array
     //to see of the user input match the products
     if (title) {
       if (title.includes(searchbox)) {
@@ -130,4 +133,3 @@ function search() {
     }
   }
 }
-search();
