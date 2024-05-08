@@ -91,4 +91,43 @@ const paintings = [
   },
 ];
 
-localStorage.setItem("paintings", JSON.stringify(paintings));
+//localStorage.setItem("paintings", JSON.stringify(paintings));
+
+/* ---prima varianta---
+function search() {
+  const searchbox = document.getElementById("search-item").value.toUpperCase(); //value=.value is a property in JavaScript that retrieves the current value of an input field in a form. Essentially, it returns the value entered into an HTML input element, such as a text box.
+  const storeitems = document.getElementById("container");
+  const product = document.querySelectorAll(".info-photos");
+
+  for (i = 0; i < paintings.length; i++) {
+    let title = paintings[i].title[0];
+    //if user value is matching with our product name
+    if (title) {
+      let textvalue1 = title.textContent || title.innerHTML;
+      if (textvalue1.toUpperCase().indexOf(searchbox) > -1) {
+        product[i].style.display = ""; //i want to display the matching results
+      } else {
+        product[i].style.display = "none"; //in case we do not find
+      }
+    }
+  }
+}
+search();*/
+function search() {
+  const searchbox = document.getElementById("search-item").value.toLowerCase();
+  const product = document.querySelectorAll(".info-photo");
+
+  for (let i = 0; i < paintings.length; i++) {
+    let title = paintings[i].title.toLowerCase(); // Access the title property directly and convert to lowercase
+    console.log(title);
+    //to see of the user input match the products
+    if (title) {
+      if (title.includes(searchbox)) {
+        product[i].style.display = ""; // Display the matching result
+      } else {
+        product[i].style.display = "none"; // Hide non-matching results
+      }
+    }
+  }
+}
+search();

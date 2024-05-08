@@ -1,5 +1,5 @@
 function generatePaintings() {
-  const paintings = JSON.parse(localStorage.getItem("paintings"));
+  //const paintings = JSON.parse(localStorage.getItem("paintings"));
   const container = document.getElementById("container");
   //facem un div pentru FIECARE painting(tablou)
   //pentru fiecare painting cream un div
