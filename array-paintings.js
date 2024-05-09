@@ -122,10 +122,12 @@ function search(e) {
 
   for (let i = 0; i < paintings.length; i++) {
     let title = paintings[i].title.toLowerCase(); // Access the title property directly and convert to lowercase
-    console.table(title); //doar pt array
+    let painter = paintings[i].painter.toLowerCase();
+    //console.log(painter);
+    //onsole.table(title); //doar pt array
     //to see of the user input match the products
-    if (title) {
-      if (title.includes(searchbox)) {
+    if (title || painter) {
+      if (title.includes(searchbox) || painter.includes(searchbox)) {
         product[i].style.display = ""; // Display the matching result
       } else {
         product[i].style.display = "none"; // Hide non-matching results
